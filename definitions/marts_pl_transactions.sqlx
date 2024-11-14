@@ -1,0 +1,14 @@
+config { 
+    type: "table"
+    , schema: "marts"
+    , name: "pl_transactions"
+    , columns: {
+        transaction_id: "STRING",
+        transaction_date: "DATE",
+        amount: "FLOAT",
+        description: "STRING",
+        category: "STRING"
+    }
+}
+select * 
+from ${ref("gsheets_personal_transactions")}

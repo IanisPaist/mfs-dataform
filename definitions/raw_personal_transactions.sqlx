@@ -1,0 +1,5 @@
+config {
+  type:   "declaration",
+  schema: "raw", // BigQuery dataset
+  name:   "gsheets_personal_transactions" // BigQuery table
+}
